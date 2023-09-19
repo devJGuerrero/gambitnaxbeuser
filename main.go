@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/devJGuerrero/gambitnaxbeuser/functions"
+)
 
 func main() {
-	fmt.Println("Gambit naxbe user")
+	lambda.Start(functions.RunLambdaUser)
 }
